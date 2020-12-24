@@ -91,7 +91,7 @@ boxwidth = (bottomrightx - topleftx)/8
 boxheight = (bottomrighty - toplefty)/8
 
 for i in range(1, 10):
-    for pos in pag.locateAllOnScreen(str(i) + '.png'):
+    for pos in pag.locateAllOnScreen('images\\' + str(i) + '.png'):
         print("Filling", i)
         fillSudoku(i, pos)
 
